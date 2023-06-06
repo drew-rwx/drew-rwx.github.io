@@ -114,7 +114,7 @@
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
-          {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
+          {%- capture entrytype -%}Master's Thesis. <em>{{entry.school}}</em> {%- endcapture -%}
         {%- elsif entry.type == "inproceedingsearly" -%}
             {%- capture entrytype -%}To appear in <em>{{entry.booktitle}}</em> {%- endcapture -%}
         {%- else -%}
