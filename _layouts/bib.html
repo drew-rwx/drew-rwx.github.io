@@ -117,6 +117,8 @@
           {%- capture entrytype -%}Master's Thesis. <em>{{entry.school}}</em> {%- endcapture -%}
         {%- elsif entry.type == "inproceedingsearly" -%}
             {%- capture entrytype -%}To appear in <em>{{entry.booktitle}}</em> {%- endcapture -%}
+        {%- elsif entry.type == "articleearly" -%}
+            {%- capture entrytype -%}To appear in the <em>{{entry.journal}}</em> {%- endcapture -%}
         {%- else -%}
           {%- capture entrytype -%}{%- endcapture -%}
         {%- endif -%}
