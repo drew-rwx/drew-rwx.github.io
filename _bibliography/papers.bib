@@ -1,3 +1,61 @@
+@inproceedings{sleek,
+    author = {Akathoott, Anju Mongandampulath and Rodriguez, Andrew and Burtscher, Martin},
+    title = {SLEEK: Compressing Memory Copies for Floating-Point Data on GPUs},
+    booktitle = {Proceedings of the 40th IEEE International Parallel and Distributed Processing Symposium},
+    year = {2026},
+selected={true}
+}
+
+@inproceedings{10.1145/3731599.3767372,
+author = {Rodriguez, Andrew and Burtscher, Martin},
+title = {On the Compressibility of Floating-Point Data in Posit and IEEE-754 Representation},
+year = {2025},
+isbn = {9798400718717},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731599.3767372},
+doi = {10.1145/3731599.3767372},
+abstract = {The IEEE 754 floating-point standard is the most used representation for real numbers in modern computer systems, despite issues in accuracy for certain applications. The posit format, which has several advantages, has been proposed as a direct drop-in replacement for IEEE floats. Many works compare the use of posits to floats in a wide range of scientific computing domains. However, there has not been any work looking into the compressibility of posit data. In this paper, we compare the compression ratios of different algorithms when the input is encoded in IEEE format and in posit format. We evaluate 5 lossless general-purpose compressors as well as several new compression algorithms synthesized by our LC framework on 14 single-precision inputs from the SDRBench suite, encoded in float and posit format. Our results show that that 4 of the 6 compressors yield an average of 2.59\% reduction in compression ratio on posit data, whereas bzip2 provides a 1.74\% increase in compression ratio, with XZ providing the highest ratios for both encodings.},
+booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+pages = {300–306},
+numpages = {7},
+keywords = {Data compression, IEEE 754 standard, Posit format},
+location = {
+},
+series = {SC Workshops '25},
+selected={true}
+}
+
+
+@INPROCEEDINGS{10596378,
+  author={Rodriguez, Andrew and Azami, Noushin and Burtscher, Martin},
+  booktitle={2024 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+  title={Adaptive Per-File Lossless Compression of Floating-Point Data}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={423-430},
+  keywords={Distributed processing;Conferences;Pipelines;Graphics processing units;Distributed databases;Data compression;Libraries;data compression;floating-point data;genetic algorithm;GPU processing},
+  doi={10.1109/IPDPSW63119.2024.00092},
+  selected={true}}
+
+
+%%%%%
+
+@article{ALANIZ2025115514,
+title = {Reachability in restricted chemical reaction networks},
+journal = {Theoretical Computer Science},
+volume = {1056},
+pages = {115514},
+year = {2025},
+issn = {0304-3975},
+doi = {https://doi.org/10.1016/j.tcs.2025.115514},
+url = {https://www.sciencedirect.com/science/article/pii/S0304397525004529},
+author = {Robert M. Alaniz and Bin Fu and Timothy Gomez and Elise Grizzell and Andrew Rodriguez and Marco Rodriguez and Robert Schweller and Tim Wylie},
+keywords = {Chemical reaction networks, Reachability, Petri-nets, Vector addition systems, Population protocols},
+abstract = {The popularity of molecular computation has given rise to several models of abstraction, one of the more recent ones being Chemical Reaction Networks (CRNs). These are equivalent to other popular computational models, such as Vector Addition Systems and Petri-Nets, and restricted versions are equivalent to Population Protocols. This paper continues the work on core reachability questions related to Chemical Reaction Networks; given two configurations, can one reach the other according to the system's rules? With no restrictions, reachability was recently shown to be Ackermann-complete, which resolved a decades-old problem. In this work, we fully characterize monotone reachability problems based on various restrictions such as the allowed rule size, the number of rules that may create a species (k-source), the number of rules that may consume a species (k-consuming), the volume, and whether the rules have an acyclic production order (feed-forward). We show PSPACE-completeness of reachability with only bimolecular reactions in two-source and two-consuming rules. This proves hardness of reachability in a restricted form of Population Protocols. This is accomplished using new techniques within the motion planning framework. We give several important results for feed-forward CRNs, where rules are single-source or single-consuming. We show that reachability is solvable in polynomial time as long as the system does not contain special void or autogenesis rules. We then fully characterize all systems of this type and show that with void/autogenesis rules, or more than one source and one consuming, the problems become NP-complete. Finally, we show several interesting special cases of CRNs based on these restrictions or slight relaxations and note future significant open questions related to this taxonomy.}
+}
+
 
 @article{ALANIZ2023103462,
 title = {Building Squares With Optimal State Complexity in Restricted Active Self-Assembly},
@@ -13,60 +71,38 @@ keywords = {Self-assembly, Tile automata, Cellular automata, Square building, Se
 abstract = {Tile Automata is a recently defined model of self-assembly that borrows many concepts from cellular automata to create active self-assembling systems where changes may be occurring within an assembly without requiring attachment. This model has been shown to be powerful even with limited assembly size, but many fundamental questions have yet to be explored. Here, we study the state complexity of assembling n×n squares in seeded Tile Automata systems where growth starts from a seed and tiles attach one at a time, similar to the abstract Tile Assembly Model. We provide optimal bounds for three classes of seeded Tile Automata systems (all without detachment), which vary in the amount of complexity allowed in the transition rules. We show that, in general, seeded Tile Automata systems require Θ(log14⁡n) states. For single-transition systems, where only one state may change in a transition rule, we show a bound of Θ(log13⁡n), and for deterministic systems, where each pair of states may only have one associated transition rule, a bound of Θ((log⁡nlog⁡log⁡n)12). Along the way, we provide optimal bounds for the subroutines of building binary strings and building O(log⁡n)×n rectangles.}
 }
 
-@InproceedingsEarly{scrnreach2023,
-  author = {Alaniz,  Robert M. and Brunner, Josh and Coulombe,  Michael and Demaine,  Erik D. and Diomidov, Yevhenii and Gomez,  Timothy and Grizzell,  Elise  and Knobel,  Ryan and Lynch, Jason and Rodriguez,  Andrew  and Schweller,  Robert  and Wylie,  Tim},
-  title = {Complexity of Reconfiguration in Surface Chemical Reaction Networks},
-  booktitle = {Proc. of the 29th International Conference on DNA Computing and Molecular Programming (DNA'23)},
-  year = {2023},
-  selected = {true},
-}
-
-@InproceedingsEarly{burnout2023,
-  author = {Alaniz,  Robert M. and Coulombe,  Michael and Demaine,  Erik D. and Fu,  Bin and Gomez,  Timothy and Grizzell,  Elise  and Knobel,  Ryan and Rodriguez,  Andrew  and Schweller,  Robert  and Wylie,  Tim},
-  title = {Reconfiguration of Linear Surface Chemical Reaction Networks with Bounded State Change},
-  booktitle = {Proc. of the 35th Canadian Conference on Computational Geometry (CCCG'23)},
-  year = {2023},
-  selected = {true},
-}
-
-@mastersthesis{masterthesis2023,
-  author  = "Rodriguez, Andrew",
-  title   = "Problems in Algorithmic Self-Assembly and a Genetic Approach to Patterns",
-  school  = "University of Texas Rio Grande Valley",
-  year    = "2023"
-}
-
-@InProceedings{covert3d,
-  author = {Alaniz, Robert M. and Caballero, David and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
-  title = {Covert Computation in the Abstract Tile-Assembly Model},
-  booktitle = {Proc. of the Symposium on Algorithmic Foundations of Dynamic Networks (SAND'23)},
-  year = {2023},
-  selected = {true},
-}
 
 @InProceedings{stagedsim,
   author = {Cirlos, Sonya C. and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
   title = {Simulation of Multiple Stages in Single Bin Active Tile Self-Assembly},
   booktitle = {Proc. of the 20th International Conference on Unconventional Computation and Natural Computation (UCNC'23)},
   year = {2023},
-  selected = {true},
 }
 
-@InProceedings{pikmin,
-  author = {Rodriguez, Andrew},
-  title = {Reachability in Pikmin Cave Sublevels is PSPACE-Complete (Short Abstract)},
-  booktitle = {The 24th Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCG3'22)},
-  year = {2022},
-  selected = {false},
+
+@InProceedings{covert3d,
+  author = {Alaniz, Robert M. and Caballero, David and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
+  title = {Covert Computation in the Abstract Tile-Assembly Model},
+  booktitle = {Proc. of the Symposium on Algorithmic Foundations of Dynamic Networks (SAND'23)},
+  year = {2023},
 }
 
-@InProceedings{crnreach,
-  author = {Fu, Bin and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
-  title = {Reachability in Population Protocols is PSPACE-Complete (Short Abstract)},
-  booktitle = {The 24th Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCG3'22)},
-  year = {2022},
-  selected = {true},
+
+@Inproceedings{burnout2023,
+  author = {Alaniz,  Robert M. and Coulombe,  Michael and Demaine,  Erik D. and Fu,  Bin and Gomez,  Timothy and Grizzell,  Elise  and Knobel,  Ryan and Rodriguez,  Andrew  and Schweller,  Robert  and Wylie,  Tim},
+  title = {Reconfiguration of Linear Surface Chemical Reaction Networks with Bounded State Change},
+  booktitle = {Proc. of the 35th Canadian Conference on Computational Geometry (CCCG'23)},
+  year = {2023},
 }
+
+
+@Inproceedings{scrnreach2023,
+  author = {Alaniz,  Robert M. and Brunner, Josh and Coulombe,  Michael and Demaine,  Erik D. and Diomidov, Yevhenii and Gomez,  Timothy and Grizzell,  Elise  and Knobel,  Ryan and Lynch, Jason and Rodriguez,  Andrew  and Schweller,  Robert  and Wylie,  Tim},
+  title = {Complexity of Reconfiguration in Surface Chemical Reaction Networks},
+  booktitle = {Proc. of the 29th International Conference on DNA Computing and Molecular Programming (DNA'23)},
+  year = {2023},
+}
+
 
 @InProceedings{squares,
   author =  {Alaniz, Robert M. and Caballero, David and Cirlos, Sonya C. and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Tenorio, Armando and Wylie, Tim},
@@ -83,25 +119,20 @@ abstract = {Tile Automata is a recently defined model of self-assembly that borr
   address = {Dagstuhl, Germany},
   URL =   {https://drops.dagstuhl.de/opus/volltexte/2022/15948},
   annote =  {Keywords: Active Self-Assembly, State Complexity, Tile Automata},
-  selected={true},
 }
 
-@misc{https://doi.org/10.48550/arxiv.2211.12603,
-  doi = {10.48550/ARXIV.2211.12603},
-  
-  url = {https://arxiv.org/abs/2211.12603},
-  arxiv = {2211.12603},
-  
-  author = {Alaniz, Robert M. and Fu, Bin and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
-  
-  keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), Discrete Mathematics (cs.DM), Emerging Technologies (cs.ET), Adaptation and Self-Organizing Systems (nlin.AO), Molecular Networks (q-bio.MN), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Physical sciences, FOS: Physical sciences, FOS: Biological sciences, FOS: Biological sciences},
-  
-  title = {Reachability in Restricted Chemical Reaction Networks},
-  
-  publisher = {arXiv},
-  
+
+@InProceedings{crnreach,
+  author = {Fu, Bin and Gomez, Timothy and Grizzell, Elise and Rodriguez, Andrew and Schweller, Robert and Wylie, Tim},
+  title = {Reachability in Population Protocols is PSPACE-Complete (Short Abstract)},
+  booktitle = {The 24th Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCG3'22)},
   year = {2022},
-  
-  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
-  selected={false},
+}
+
+
+@InProceedings{pikmin,
+  author = {Rodriguez, Andrew},
+  title = {Reachability in Pikmin Cave Sublevels is PSPACE-Complete (Short Abstract)},
+  booktitle = {The 24th Japan Conference on Discrete and Computational Geometry, Graphs, and Games (JCDCG3'22)},
+  year = {2022},
 }
